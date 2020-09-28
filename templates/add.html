@@ -1,7 +1,7 @@
 {% extends 'base.html' %} {% block content %}
 <div class="jumbotron">
-  <h1>have a puppy that needs to be adopted</h1>
-  <p>Add a new Puppy to our database:</p>
+  <h1>Have a puppy that needs to be adopted</h1>
+  <p>Add a new Puppy to our Database:</p>
   <form method="post">
     {{form.hidden_tag()}} {{form.name.label}}{{form.name}} {{form.submit}}
   </form>
