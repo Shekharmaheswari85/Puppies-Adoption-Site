@@ -1,1 +1,1 @@
-web: gunicorn app:adoption_site
+web: gunicorn app:app
