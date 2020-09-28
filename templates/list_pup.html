@@ -2,9 +2,11 @@
 <div class="jumbotron">
   <h1>Here is the list of all the available puppies:</h1>
   <ul>
-    {% for pup in puppies %}
+    {% if puppies is None %}
+    <p>Nothing is being added to the database yet</p>
+    {% else %} {% for pup in puppies %}
     <li>{{pup}}</li>
-    {% endfor %}
+    {% endfor %} {% endif %}
   </ul>
 </div>
 {% endblock %}

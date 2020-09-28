@@ -78,6 +78,8 @@ def add_pup():
 @app.route('/list')
 def list_pup():
     puppies = Puppy.query.all()
+    if puppies == None:
+        return render_template('list_pup.html', puppies=None)
     return render_template('list_pup.html', puppies=puppies)
 
 
